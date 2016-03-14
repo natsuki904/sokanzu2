@@ -164,10 +164,10 @@
                                     <outletCollection property="gestureRecognizers" destination="k1w-VA-xxZ" appends="YES" id="7Q8-V8-ac4"/>
                                 </connections>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xUG-fy-9Ck">
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xUG-fy-9Ck">
                                 <rect key="frame" x="56" y="88" width="218" height="23"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kto-Ya-eQw">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="@" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kto-Ya-eQw">
                                         <rect key="frame" x="0.0" y="0.0" width="17" height="23"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="21" id="Psz-h1-jO1"/>
@@ -185,7 +185,7 @@
                                             </mask>
                                         </variation>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="人目を選んでください。" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ih-6C-Q0y">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="人目を選んでください。" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ih-6C-Q0y">
                                         <rect key="frame" x="17" y="0.0" width="201" height="23"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="0ih-6C-Q0y" secondAttribute="height" multiplier="187:21" id="4Lm-gm-UMg"/>
@@ -420,6 +420,9 @@
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="qan-Am-1Cq" firstAttribute="top" secondItem="RAc-Zp-eWE" secondAttribute="bottom" id="SyW-HZ-qfe"/>
+                                </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SvC-Tg-yQD">
                                 <rect key="frame" x="159" y="489" width="161" height="30"/>
@@ -505,7 +508,7 @@
                                 </variation>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="LTA-Vs-S5Y">
-                                <rect key="frame" x="188" y="210" width="102" height="179"/>
+                                <rect key="frame" x="188" y="210" width="102" height="181"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kZm-eR-3VK">
                                         <rect key="frame" x="0.0" y="0.0" width="102" height="21"/>
@@ -524,12 +527,15 @@
                                         </connections>
                                     </imageView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" text="mogemogemogemogmoemogemoge" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="7qb-jt-o7i">
-                                        <rect key="frame" x="0.0" y="129" width="102" height="50"/>
+                                        <rect key="frame" x="0.0" y="129" width="102" height="52"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="7qb-jt-o7i" firstAttribute="top" secondItem="GPj-2B-Glo" secondAttribute="bottom" id="gsa-HN-6do"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -545,20 +551,22 @@
                             <constraint firstAttribute="bottomMargin" secondItem="ncU-K9-pHz" secondAttribute="bottom" constant="-16" id="IRy-fk-uVV"/>
                             <constraint firstAttribute="trailing" secondItem="SvC-Tg-yQD" secondAttribute="trailing" id="IUy-2z-pwH"/>
                             <constraint firstItem="0rA-0b-QJ3" firstAttribute="top" secondItem="ncU-K9-pHz" secondAttribute="bottom" id="ImM-yc-XC3"/>
-                            <constraint firstItem="r76-Pl-cxF" firstAttribute="centerX" secondItem="4kx-4T-i3l" secondAttribute="centerX" id="Jh5-ho-TIk"/>
                             <constraint firstItem="SvC-Tg-yQD" firstAttribute="top" secondItem="2ok-Xj-3Dn" secondAttribute="top" id="K8u-Rp-eEb"/>
                             <constraint firstItem="0rA-0b-QJ3" firstAttribute="top" secondItem="SvC-Tg-yQD" secondAttribute="bottom" constant="49" id="KVL-qm-ZnC"/>
                             <constraint firstItem="2ok-Xj-3Dn" firstAttribute="leading" secondItem="4kx-4T-i3l" secondAttribute="leading" id="KpB-eH-mGn"/>
+                            <constraint firstItem="2ok-Xj-3Dn" firstAttribute="centerX" secondItem="r76-Pl-cxF" secondAttribute="centerX" id="LQW-3l-4gf"/>
                             <constraint firstItem="ncU-K9-pHz" firstAttribute="leading" secondItem="2ok-Xj-3Dn" secondAttribute="leading" id="LWS-Mj-Jhe"/>
                             <constraint firstItem="0rA-0b-QJ3" firstAttribute="top" secondItem="ncU-K9-pHz" secondAttribute="bottom" id="Mrc-u5-SHg"/>
                             <constraint firstItem="SvC-Tg-yQD" firstAttribute="leading" secondItem="2ok-Xj-3Dn" secondAttribute="trailing" constant="1" id="NWs-tg-8di"/>
                             <constraint firstItem="ncU-K9-pHz" firstAttribute="leading" secondItem="2ok-Xj-3Dn" secondAttribute="leading" id="OUi-PP-xBA"/>
+                            <constraint firstItem="SvC-Tg-yQD" firstAttribute="centerX" secondItem="LTA-Vs-S5Y" secondAttribute="centerX" id="T9E-O9-Lx6"/>
                             <constraint firstItem="SvC-Tg-yQD" firstAttribute="centerY" secondItem="2ok-Xj-3Dn" secondAttribute="centerY" id="Th2-mw-NCd"/>
                             <constraint firstItem="0rA-0b-QJ3" firstAttribute="top" secondItem="ncU-K9-pHz" secondAttribute="bottom" id="Tmo-QO-yyI"/>
                             <constraint firstItem="SvC-Tg-yQD" firstAttribute="leading" secondItem="2ok-Xj-3Dn" secondAttribute="trailing" constant="1" id="Ua3-sB-Dhf"/>
                             <constraint firstItem="SvC-Tg-yQD" firstAttribute="centerX" secondItem="2ok-Xj-3Dn" secondAttribute="centerX" id="UvD-vo-iii"/>
                             <constraint firstItem="2ok-Xj-3Dn" firstAttribute="leading" secondItem="4kx-4T-i3l" secondAttribute="leading" id="XPb-WG-WgN"/>
                             <constraint firstItem="SvC-Tg-yQD" firstAttribute="leading" secondItem="ncU-K9-pHz" secondAttribute="leading" id="Xbc-Ad-cLr"/>
+                            <constraint firstItem="LTA-Vs-S5Y" firstAttribute="bottom" secondItem="r76-Pl-cxF" secondAttribute="bottom" id="a2i-n3-W0z"/>
                             <constraint firstAttribute="trailing" secondItem="ncU-K9-pHz" secondAttribute="trailing" id="bol-mN-WMw"/>
                             <constraint firstItem="2ok-Xj-3Dn" firstAttribute="trailing" secondItem="SvC-Tg-yQD" secondAttribute="trailing" id="dgO-c5-Y6h"/>
                             <constraint firstAttribute="trailing" secondItem="ncU-K9-pHz" secondAttribute="trailing" id="don-x6-F6P"/>
