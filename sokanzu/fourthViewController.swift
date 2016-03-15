@@ -13,6 +13,7 @@ import iAd
 
 class fourthViewController: UIViewController {
 
+    @IBOutlet weak var title1: UILabel!
     @IBOutlet weak var textField1: UILabel!
     @IBOutlet weak var textField2: UILabel!
     @IBOutlet weak var comment1: UITextView!
@@ -111,6 +112,14 @@ class fourthViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if self.view.bounds.size.width == 320 {
+            title1.font = UIFont(name: "Honoka-Maru-Gothic", size: 25)
+
+        } else if self.view.bounds.size.width == 1080 {
+            title1.font = UIFont(name: "Honoka-Maru-Gothic", size: 50)
+        }
+        
         
         //ユーザーデフォルトの読み込み
         var myDefault = NSUserDefaults.standardUserDefaults()
