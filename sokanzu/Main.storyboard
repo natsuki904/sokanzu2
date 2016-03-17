@@ -195,8 +195,8 @@
                                     <action selector="tapField:" destination="fsi-06-VTP" eventType="editingDidEndOnExit" id="gaG-vh-3He"/>
                                 </connections>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="90O-5V-Aww">
-                                <rect key="frame" x="98" y="464" width="124" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="90O-5V-Aww">
+                                <rect key="frame" x="98" y="431" width="124" height="30"/>
                                 <color key="backgroundColor" red="0.069129755079999994" green="0.74437736740000005" blue="0.2086520929" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="90O-5V-Aww" secondAttribute="height" multiplier="62:15" id="aXj-04-E8A"/>
@@ -217,27 +217,6 @@
                                     <outlet property="delegate" destination="fsi-06-VTP" id="ORj-Nk-Vy8"/>
                                 </connections>
                             </adBannerView>
-                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nT4-7q-ona">
-                                <rect key="frame" x="98" y="464" width="124" height="30"/>
-                                <color key="backgroundColor" red="1" green="0.21697217229999999" blue="0.1351725886" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="0m4-LA-2eD"/>
-                                    <constraint firstAttribute="width" constant="124" id="XVL-3d-wVs"/>
-                                    <constraint firstAttribute="width" secondItem="nT4-7q-ona" secondAttribute="height" multiplier="62:15" id="u4H-gz-BfM"/>
-                                </constraints>
-                                <state key="normal" title="作成する">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="0m4-LA-2eD"/>
-                                        <exclude reference="XVL-3d-wVs"/>
-                                    </mask>
-                                </variation>
-                                <connections>
-                                    <action selector="tapCreate:" destination="fsi-06-VTP" eventType="touchUpInside" id="263-Jy-wwY"/>
-                                </connections>
-                            </button>
                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xUG-fy-9Ck">
                                 <rect key="frame" x="56" y="83" width="218" height="23"/>
                                 <subviews>
@@ -289,6 +268,27 @@
                                     <constraint firstAttribute="width" secondItem="xUG-fy-9Ck" secondAttribute="height" multiplier="218:23" id="3v8-1E-ySW"/>
                                 </constraints>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nT4-7q-ona">
+                                <rect key="frame" x="98" y="431" width="124" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.21697217229999999" blue="0.1351725886" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="0m4-LA-2eD"/>
+                                    <constraint firstAttribute="width" constant="124" id="XVL-3d-wVs"/>
+                                    <constraint firstAttribute="width" secondItem="nT4-7q-ona" secondAttribute="height" multiplier="62:15" id="u4H-gz-BfM"/>
+                                </constraints>
+                                <state key="normal" title="作成する">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="0m4-LA-2eD"/>
+                                        <exclude reference="XVL-3d-wVs"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="tapCreate:" destination="fsi-06-VTP" eventType="touchUpInside" id="263-Jy-wwY"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.86032279219999996" blue="0.051612329720000003" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -307,6 +307,7 @@
                             <constraint firstItem="mi0-Di-2ns" firstAttribute="leading" secondItem="szu-IY-Uff" secondAttribute="leading" id="JET-ho-edg"/>
                             <constraint firstItem="Eeb-vZ-UWh" firstAttribute="centerX" secondItem="QJD-WX-GWY" secondAttribute="centerX" id="Kn9-rC-mQa"/>
                             <constraint firstItem="mi0-Di-2ns" firstAttribute="top" secondItem="90O-5V-Aww" secondAttribute="bottom" constant="24" id="PEf-e6-Ote"/>
+                            <constraint firstItem="mi0-Di-2ns" firstAttribute="centerX" secondItem="nT4-7q-ona" secondAttribute="centerX" id="Pa0-fB-SGc"/>
                             <constraint firstItem="QJD-WX-GWY" firstAttribute="leading" secondItem="szu-IY-Uff" secondAttribute="leadingMargin" constant="34" id="Qni-10-ivg"/>
                             <constraint firstItem="0av-9U-FJg" firstAttribute="top" secondItem="mi0-Di-2ns" secondAttribute="bottom" id="RGG-ne-7hx"/>
                             <constraint firstAttribute="trailing" secondItem="mi0-Di-2ns" secondAttribute="trailing" id="SLZ-JO-jb9"/>
@@ -344,6 +345,8 @@
                                 <exclude reference="Ypg-BS-oaw"/>
                                 <exclude reference="fVa-IV-qkq"/>
                                 <exclude reference="h7f-3J-tCP"/>
+                                <exclude reference="1mx-ba-ZRZ"/>
+                                <exclude reference="43C-NZ-o7t"/>
                                 <exclude reference="9ru-bE-EPX"/>
                                 <exclude reference="rvC-W7-zmj"/>
                                 <exclude reference="zQD-j4-ihd"/>
@@ -938,7 +941,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="2466" y="1076"/>
+            <point key="canvasLocation" x="2457" y="1044"/>
         </scene>
         <!--Second View Controller-->
         <scene sceneID="7D3-WU-OWr">
@@ -1007,10 +1010,10 @@
                                 </variation>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tL9-Nu-wKr">
-                                <rect key="frame" x="97" y="465" width="126" height="30"/>
+                                <rect key="frame" x="97" y="438" width="126" height="30"/>
                                 <color key="backgroundColor" red="0.069129755078518318" green="0.74437736742424243" blue="0.20865209294462903" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="tL9-Nu-wKr" secondAttribute="height" multiplier="21:5" id="hqB-0y-YIa"/>
+                                    <constraint firstAttribute="width" secondItem="tL9-Nu-wKr" secondAttribute="height" multiplier="21:5" id="qxz-Ha-uAw"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -1045,6 +1048,7 @@
                             <constraint firstItem="37j-0X-sI4" firstAttribute="top" secondItem="tL9-Nu-wKr" secondAttribute="bottom" constant="53" id="XtT-fl-W2q"/>
                             <constraint firstItem="aHg-ln-vmg" firstAttribute="top" secondItem="37j-0X-sI4" secondAttribute="bottom" id="Zv6-o3-EjH"/>
                             <constraint firstItem="37j-0X-sI4" firstAttribute="leading" secondItem="bGT-49-56k" secondAttribute="leading" id="bHH-0y-3Bz"/>
+                            <constraint firstItem="37j-0X-sI4" firstAttribute="top" secondItem="tL9-Nu-wKr" secondAttribute="bottom" constant="50" id="cAX-EY-usw"/>
                             <constraint firstItem="5tc-wE-POS" firstAttribute="centerX" secondItem="7kq-ck-Hy2" secondAttribute="centerX" id="cph-i8-SWz"/>
                             <constraint firstItem="5tc-wE-POS" firstAttribute="centerX" secondItem="tL9-Nu-wKr" secondAttribute="centerX" id="dcw-dt-xRv"/>
                             <constraint firstItem="7kq-ck-Hy2" firstAttribute="leading" secondItem="bGT-49-56k" secondAttribute="leadingMargin" constant="12" id="eIO-EQ-kAE"/>
@@ -1070,6 +1074,7 @@
                                 <exclude reference="Hxx-WH-Ytg"/>
                                 <exclude reference="L4U-Pp-7Nb"/>
                                 <exclude reference="MUB-64-Axr"/>
+                                <exclude reference="N1Y-jj-mPj"/>
                                 <exclude reference="XtT-fl-W2q"/>
                                 <exclude reference="bHH-0y-3Bz"/>
                                 <exclude reference="1Q4-S5-AO3"/>

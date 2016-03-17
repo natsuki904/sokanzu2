@@ -123,14 +123,16 @@ class  thirdViewController_copy: UIViewController, UIImagePickerControllerDelega
             if let pickedImage = info[UIImagePickerControllerOriginalImage] as? UIImage {
                 imageView.contentMode = .ScaleAspectFit
                 imageView.image = pickedImage
+//                let image:UIImage! = imageView.image
+//                UIImageWriteToSavedPhotosAlbum(image, self, "image:didFinishSavingWithError:contextInfo:", nil)
             }
             
             
             //メタデータを保存するためにはAssetsLibraryを使用する
             var library : ALAssetsLibrary = ALAssetsLibrary()
-            library.writeImageToSavedPhotosAlbum(imageView.image!.CGImage,metadata: info, completionBlock:{
+            library.writeImageToSavedPhotosAlbum(imageView.image!.CGImage,metadata: info[UIImagePickerControllerMediaMetadata] as! [NSObject : AnyObject], completionBlock:{
                 (assetURL: NSURL!, error: NSError!) -> Void in
-                
+
                 let url = NSURL(string: assetURL.description)
                 
                 //ユーザーデフォルトを用意する

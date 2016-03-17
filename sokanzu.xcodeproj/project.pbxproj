@@ -30,7 +30,6 @@
 		CED179B61C81EEFA00651F41 /* 【源ノ角ゴシック・源柔ゴシック】Apache License 2.0.txt in Resources */ = {isa = PBXBuildFile; fileRef = CED179AF1C81EEFA00651F41 /* 【源ノ角ゴシック・源柔ゴシック】Apache License 2.0.txt */; };
 		CED179B71C81EEFA00651F41 /* 利用前にお読みください.txt in Resources */ = {isa = PBXBuildFile; fileRef = CED179B01C81EEFA00651F41 /* 利用前にお読みください.txt */; };
 		CED6F7731C76FD88007591CE /* json.txt in Resources */ = {isa = PBXBuildFile; fileRef = CED6F7721C76FD88007591CE /* json.txt */; };
-		CED6F7751C789919007591CE /* myTitle1.png in Resources */ = {isa = PBXBuildFile; fileRef = CED6F7741C789919007591CE /* myTitle1.png */; };
 		CEDC131C1C8AE2FC0047A954 /* UIViewXXYBoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC131B1C8AE2FC0047A954 /* UIViewXXYBoom.swift */; };
 		CEDC131E1C8C32980047A954 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEDC131D1C8C32980047A954 /* Main.storyboard */; };
 /* End PBXBuildFile section */
@@ -82,7 +81,6 @@
 		CED179AF1C81EEFA00651F41 /* 【源ノ角ゴシック・源柔ゴシック】Apache License 2.0.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "【源ノ角ゴシック・源柔ゴシック】Apache License 2.0.txt"; sourceTree = "<group>"; };
 		CED179B01C81EEFA00651F41 /* 利用前にお読みください.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "利用前にお読みください.txt"; sourceTree = "<group>"; };
 		CED6F7721C76FD88007591CE /* json.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = json.txt; sourceTree = "<group>"; };
-		CED6F7741C789919007591CE /* myTitle1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = myTitle1.png; sourceTree = "<group>"; };
 		CEDC131B1C8AE2FC0047A954 /* UIViewXXYBoom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewXXYBoom.swift; sourceTree = "<group>"; };
 		CEDC131D1C8C32980047A954 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		DF77760AC766AF4BEE64859B /* Pods-sokanzu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sokanzu.release.xcconfig"; path = "Pods/Target Support Files/Pods-sokanzu/Pods-sokanzu.release.xcconfig"; sourceTree = "<group>"; };
@@ -159,7 +157,6 @@
 				CEDC131D1C8C32980047A954 /* Main.storyboard */,
 				CE1045E61C87F8E800A2AEB3 /* thirdViewController_copy.swift */,
 				CEDC131B1C8AE2FC0047A954 /* UIViewXXYBoom.swift */,
-				CED6F7741C789919007591CE /* myTitle1.png */,
 				CE9390061C71AB970006AB30 /* fourthViewController.swift */,
 				CED165BF1C7AE60500651F41 /* fiveViewController.swift */,
 				CE938FD91C71A4440006AB30 /* Assets.xcassets */,
@@ -337,7 +334,6 @@
 				CED179B21C81EEFA00651F41 /* LICENSE_E in Resources */,
 				CEDC131E1C8C32980047A954 /* Main.storyboard in Resources */,
 				CE938FDA1C71A4440006AB30 /* Assets.xcassets in Resources */,
-				CED6F7751C789919007591CE /* myTitle1.png in Resources */,
 				CED165FF1C7F3DED00651F41 /* 半沢風.jpg in Resources */,
 				CED179B11C81EEFA00651F41 /* honokamarugo.ttf in Resources */,
 				CED179B71C81EEFA00651F41 /* 利用前にお読みください.txt in Resources */,
