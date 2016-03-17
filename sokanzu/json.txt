@@ -1,12 +1,12 @@
 [
-{"relationship":"大好き","comment":"すこぶる天才ハッカー。アノニマスの一員でもある。"},
- {"relationship":"ライバル","comment":"容姿端麗だが、ブラックホールの胃をもつ。"},
- {"relationship":"何奴!?","comment":"アメリカ生まれ、火星育ち。主食はトマト。"},
- {"relationship":"貴様！","comment":"数少ないサムライ。副業はコンビニの店長。"},
- {"relationship":"ううっ","comment":"国民的アイドル。超大物芸能人と二股している。"},
- {"relationship":"尊敬","comment":"歌って踊れるアンドロイド、得意技は早口言葉。"},
- {"relationship":"妹","comment":"見た目は大人、頭脳は子供。その名は迷探偵"},
- {"relationship":"嫌い","comment":"人型兵機。可能性は無限大。必殺技は噛む噛む波ー"},
- {"relationship":"神","comment":"ケイティーペリーとは腐れ縁の人気シンガーのいとこ"},
- {"relationship":"無理","comment":"最近モテ期到来。"}
+{"relationship":"クソが","comment":"今度失敗したら、潰すわよ。"},
+ {"relationship":"はぁ?","comment":"今回の件、土下座して詫びてもらいます。よろしいですね。"},
+ {"relationship":"何奴!?","comment":"アンタ ホンマニ アホヤナ　ウチニ ホレタンチャウ"},
+ {"relationship":"貴様！","comment":"なに誤解してんだお前。知らんよ、知らんぞお前！"},
+ {"relationship":"ううっ","comment":"やれるもんならやってみな。"},
+ {"relationship":"信頼","comment":"いいえ、10倍返しです。"},
+ {"relationship":"妻","comment":"机ばんばんだ！"},
+ {"relationship":"復讐","comment":"悪いが今回は、俺もお前をフォロー出来ない。"},
+ {"relationship":"馬鹿か","comment":"君は、もう終わりだ。"},
+ {"relationship":"好きだ","comment":"はい、よくわかりました。（棒読み）"}
 ]
