@@ -113,9 +113,9 @@ class fiveViewController: UIViewController {
         var member1 = myStr[0]["name"]
         var member2 = myStr[1]["name"]
         var member3 = myStr[2]["name"]
-        var member1Str = String(member1)
-        var member2Str = String(member2)
-        var member3Str = String(member3)
+        var member1Str = member1 as! String
+        var member2Str = member2 as! String
+        var member3Str = member3 as! String
 
         var twitterVC = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
         twitterVC.setInitialText("\(member1Str)と\(member2Str)と\(member3Str)の関係")

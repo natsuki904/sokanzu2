@@ -287,7 +287,7 @@
 				TargetAttributes = {
 					CE938FCE1C71A4440006AB30 = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = PJ7CYT933T;
+						DevelopmentTeam = F2Z2JZG436;
 					};
 					CE938FE21C71A4440006AB30 = {
 						CreatedOnToolsVersion = 7.2;
@@ -527,7 +527,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Natsuki Teruya (F2Z2JZG436)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Natsuki Teruya (F2Z2JZG436)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -542,6 +543,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "2e5c9ba1-56c1-44fa-90e5-21bf9ee1aad7";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -552,10 +554,13 @@
 			baseConfigurationReference = 3D4BF76B07921D485982939A /* Pods-sokanzu.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = sokanzu/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.teruya.sokanzu;
+				PRODUCT_BUNDLE_IDENTIFIER = com.NatsukiNexseed.sokanzu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -564,10 +569,13 @@
 			baseConfigurationReference = DF77760AC766AF4BEE64859B /* Pods-sokanzu.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = sokanzu/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.teruya.sokanzu;
+				PRODUCT_BUNDLE_IDENTIFIER = com.NatsukiNexseed.sokanzu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
