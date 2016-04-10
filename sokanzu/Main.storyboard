@@ -62,14 +62,6 @@
                                 <state key="normal" title="START">
                                     <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="rippleColor">
-                                        <color key="value" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="rippleBackgroundColor">
-                                        <color key="value" red="1" green="0.24858024817920366" blue="0.21169813988790132" alpha="1" colorSpace="calibratedRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="AZ2-lO-db0"/>
@@ -557,9 +549,17 @@
                             <constraint firstItem="0rA-0b-QJ3" firstAttribute="top" secondItem="ncU-K9-pHz" secondAttribute="bottom" id="d7W-WG-fvS"/>
                             <constraint firstItem="ncU-K9-pHz" firstAttribute="leading" secondItem="4kx-4T-i3l" secondAttribute="leading" id="eUP-Pw-sAZ"/>
                             <constraint firstItem="ncU-K9-pHz" firstAttribute="centerX" secondItem="4kx-4T-i3l" secondAttribute="centerX" id="fPq-kO-MNU"/>
+                            <constraint firstItem="0rA-0b-QJ3" firstAttribute="top" secondItem="SvC-Tg-yQD" secondAttribute="bottom" constant="49" id="gc4-tW-Kih"/>
                             <constraint firstAttribute="trailing" secondItem="ncU-K9-pHz" secondAttribute="trailing" id="hnu-P9-Kqz"/>
                             <constraint firstItem="SvC-Tg-yQD" firstAttribute="leading" secondItem="2ok-Xj-3Dn" secondAttribute="trailing" constant="1" id="mjW-eB-KsS"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="5Cd-2j-2VR"/>
+                                <exclude reference="Jrm-rt-VNr"/>
+                                <exclude reference="gc4-tW-Kih"/>
+                            </mask>
+                        </variation>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>

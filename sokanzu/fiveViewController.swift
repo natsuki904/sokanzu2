@@ -144,6 +144,7 @@ class fiveViewController: UIViewController {
         //ユーザーデフォルトの読み込み
         var myDefault = NSUserDefaults.standardUserDefaults()
         var myStr:NSArray = myDefault.arrayForKey("myString2")!
+        print(myStr)
         var member1 = myStr[0]["name"]
         var member2 = myStr[1]["name"]
         var member3 = myStr[2]["name"]

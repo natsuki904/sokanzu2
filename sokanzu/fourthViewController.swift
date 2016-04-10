@@ -34,8 +34,13 @@ class fourthViewController: UIViewController {
 
     }
     
+    @IBAction func tapImage2(sender: AnyObject) {
+        (sender as! UITapGestureRecognizer).enabled = false
+        delay(0, task: {self.image2.boom()})
+        
+    }
+    
     typealias Task = (cancel : Bool) -> ()
-
     
     func delay(time:NSTimeInterval, task:()->()) ->  Task? {
         
@@ -75,14 +80,6 @@ class fourthViewController: UIViewController {
 
     
     
-    @IBAction func tapImage2(sender: AnyObject) {
-        (sender as! UITapGestureRecognizer).enabled = false
-        delay(0, task: {self.image2.boom()})
-
-    }
-    
-    
-
     func snapShot() -> UIImage {
         // キャプチャする範囲を取得.
         let rect = self.view.bounds
