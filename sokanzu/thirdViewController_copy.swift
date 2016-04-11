@@ -191,6 +191,12 @@ class  thirdViewController_copy: UIViewController, UIImagePickerControllerDelega
             //閉じる処理
             imagePicker.dismissViewControllerAnimated(true, completion: nil)
             
+                    // テキストフィールドと写真を登録すると次へ進める
+                    if memberName.text != "" && imageView.image != "noImage.png" {
+                        nextBtn.enabled = true
+                        createBtn.enabled = true
+                    }
+
             
             if let pickedImage = info[UIImagePickerControllerOriginalImage] as? UIImage {
                 imageView.contentMode = .ScaleAspectFit
@@ -282,11 +288,6 @@ class  thirdViewController_copy: UIViewController, UIImagePickerControllerDelega
             }
         }
         
-        // テキストフィールドと写真を登録すると次へ進める
-        if memberName.text != "" && imageView.image != "noImage.png" {
-            nextBtn.enabled = true
-            createBtn.enabled = true
-        }
     }
     
     
